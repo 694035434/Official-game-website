@@ -1,0 +1,99 @@
+
+.top_module{
+    width: 1920px;
+    height: 75px;
+    background-color:#252525;
+    margin: 0 auto;
+}
+.top_module a,#welcome,#server_user{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+
+}
+.logo{
+    width: 141px;
+    height: 75px;
+    background-image: url("../images/logo.png");
+    float: left;
+    margin-left: 200px;
+}
+.login_title{
+    width:204px;
+    height: 65px;
+    margin-top: 5px;
+    float: left;
+    background-image: url("../images/logo_text.png");
+}
+.main_module{
+    margin: 0 auto;
+    width: 1400px;
+    height: 800px;
+        background-color: rgba(108, 102, 105, 0.98);
+    margin-top: 50px;
+    border: solid 1px black;
+}
+.name{
+    width: 200px;
+    height: 100px;
+    font-size: 35px;
+    color: whitesmoke;
+    margin: 0 auto;
+    font-weight: bolder;
+
+}
+.h_img{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.price{
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    color: whitesmoke;
+    margin: 0 auto;
+    position: relative;
+    left: 50px;
+}
+.buy_but{
+    width: 180px;
+    height: 50px;
+     background-color: #92000e;
+    border: 1px solid #c40013;
+    padding-left: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.buy_but span{
+    font-size: 30px;
+    color: whitesmoke;
+    /*text-decoration: none;*/
+}
+.mb{
+    width: 1887px;
+    height: 888px;
+    background-color: rgba(0, 0, 0, 0.52);
+    position: absolute;
+    z-index: 1;
+    left: -1900px;
+}
+.buy_logo{
+    width: 500px;
+    height: 665px;
+    background-image: url("../images/mine.jpg");
+    position: absolute;
+    top: 120px;
+    left: 700px;
+    z-index: 2;
+}
+.main{
+    width: 1920px;
+    height: 1800px;
+    margin: 0 auto;
+}

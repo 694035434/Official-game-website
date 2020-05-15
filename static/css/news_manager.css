@@ -1,0 +1,124 @@
+body{
+        background-image: url("../images/user_manager.jpg");
+
+}
+.top_module{
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.44);
+}
+.logo{
+    width: 141px;
+    height: 75px;
+    background-image: url("../images/logo.png");
+    float: left;
+    margin-left: 300px;
+
+}
+.login_title{
+    width:204px;
+    height: 65px;
+    margin-top: 5px;
+    float: left;
+    background-image: url("../images/logo_text.png");
+}
+.main_module{
+    width: 100%;
+    height: 750px;
+    /*background-color: #F8EFE7;*/
+    /*margin-top: 100px;*/
+}
+.main_module_1{
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    /*margin-top: 100px;*/
+    position: relative;
+    top: 150px;
+    background-color: rgba(0, 0, 0, 0.41);
+    /*border: 3px black solid;*/
+}
+.main_module_1{
+    font-size: 25px;
+    color: whitesmoke;
+    position: relative;
+    top: 180px;
+}
+#class,#name,#time{
+    width: 600px;
+    height: 28px;
+    position:relative ;
+    left: 150px;
+    top: -35px;
+    background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 5px;
+    color:whitesmoke;
+    border: 1px solid whitesmoke;
+
+    /*box-shadow: 3px 3px 3px white;*/
+}
+#introduce{
+    width: 800px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.41);
+        border-radius: 5px;
+    color: whitesmoke;
+
+
+}
+.class0,.name0,.time0 {
+    width: 600px;
+    margin-top: 20px;
+}
+.introduce0{
+    margin-top: 30px;
+}
+#join_but{
+    width: 75px;
+    height: 100px;
+    background-color: whitesmoke;
+    font-size: 25px;
+    font-weight: bolder;
+    position: relative;
+    left: 850px;
+    top: -400px;
+    /*border: 3px solid black;*/
+    background-color: rgba(0, 0, 0, 0.58);
+    box-shadow: 3px 3px 5px white;
+    color: whitesmoke;
+    line-height: 100px;
+    padding-left: 25px;
+    border: 1px whitesmoke solid;
+    /*z-index: 1;*/
+}
+#show{
+    width: 100px;
+    height: 50px;
+    /*background-color: black;*/
+    position: relative;
+    left: 850px;
+    top: -400px;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+.goback{
+    width: 165px;
+    height: 60px;
+    background-color: #e5e5e5;
+    /*border: 3px black solid;*/
+    /*color: #232323;*/
+    font-size: 25px;
+    /*font-weight: bolder;*/
+    float: right;
+    box-shadow: 3px 3px 3px white;
+
+    line-height: 60px;
+    padding-left:15px;
+    margin-right: 150px;
+     background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 5px;
+    color:whitesmoke;
+    border: 1px solid whitesmoke;
+}

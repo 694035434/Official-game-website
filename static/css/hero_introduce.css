@@ -1,0 +1,87 @@
+body{
+    background-color: #a1979d;
+}
+/*第一模块*/
+.top_module{
+    width: 1920px;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.79);
+    margin: 0 auto;
+}
+.logo{
+    width: 141px;
+    height: 75px;
+    background-image: url("../images/logo.png");
+    float: left;
+    margin-left: 300px;
+}
+.login_title{
+    width:204px;
+    height: 65px;
+    margin-top: 5px;
+    float: left;
+    background-image: url("../images/logo_text.png");
+}
+.main_module{
+    width: 1920px;
+    height: 801px;
+    /*background-color: black;*/
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.introduce{
+    width: 460px;
+    height: 800px;
+    float: left;
+    /*position: absolute;*/
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.79);
+}
+.name{
+    width: 200px;
+    height: 50px;
+    color: whitesmoke;
+    font-size: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.hero_img{
+    width: 1422px;
+    height: 800px;
+        /*position: absolute;*/
+
+    float: right;
+    /*margin-left: 10px;*/
+    background-color: black;
+}
+.story{
+    font-size: 18px;
+    color: whitesmoke;
+    width: 370px;
+    margin: 0  auto;
+    height: 660px;
+
+}
+.hero_buy{
+    width: 298px;
+    height: 70px;
+      background-color: #92000e;
+    border: 1px solid #c40013;
+    border-radius: 5px;
+    padding-left: 160px;
+    padding-top: 15px;
+    position: relative;
+    top: -200px;
+    /*color: whitesmoke;*/
+    font-size: 30px;
+}
+.hero_buy a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.main{
+    width: 1920px;
+    height: 1800px;
+    margin: 0 auto;
+}

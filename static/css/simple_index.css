@@ -1,0 +1,125 @@
+body{
+    background-color: #040404;
+}
+.top_module{
+    width: 1920px;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.02);
+
+}
+.logo{
+    width: 141px;
+    height: 75px;
+    background-image: url("../images/logo.png");
+    float: left;
+    margin-left: 300px;
+}
+/*.login_title{*/
+    /*width:204px;*/
+    /*height: 65px;*/
+    /*margin-top: 5px;*/
+    /*float: left;*/
+    /*background-image: url("../images/logo_text.png");*/
+/*}*/
+#goto_mainweb,#goto_activity{
+    width: 140px;
+    height: 55px;
+    background-color: #222222;
+    border-radius: 7px;
+    box-shadow: 4px 4px 3px white,-4px -4px 3px white;
+    margin-left: 50px;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+    right: 100px;
+    top: 40px;
+    font-size: 25px;
+    line-height: 55px;
+    color: whitesmoke;
+    font-weight: bolder;
+    padding-left: 30px;
+}
+.first_module{
+    width: 1920px;
+    height: 970px;
+    background-image: url("../images/main1.jpg");
+    overflow: hidden;
+    /*position: absolute;*/
+    /*left: -10px;*/
+}
+.logo{
+    position: relative;
+    top: 50px;
+}
+.main_logo{
+    width: 404px;
+    height: 129px;
+    background-image: url("../images/main_logo.png");
+    position: relative;
+    top: -60px;
+    /*top: 300px;*/
+    left: 720px;
+}
+.second_module{
+    width: 1920px;
+    height: 350px;
+    /*position: absolute;*/
+    margin-top: 100px;
+    /*margin: 0 auto;*/
+    /*background-color: black;*/
+    overflow: hidden;
+
+}
+.second_module1,.second_module2{
+    width: 960px;
+    height: 540px;
+    float: left;
+}
+.second_module1{
+    background-image: url("../images/main2.jpg");
+
+}
+.second_module2{
+    background-image: url("../images/main3.jpg");
+}
+.news_but,.register_but{
+    width: 200px;
+    height: 50px;
+    color: honeydew;
+    font-size: 40px;
+    position: relative;
+    left: 350px;
+    top: 150px;
+    text-decoration:none;
+    /*background-color: rgba(0, 0, 0, 0.44);*/
+}
+.last_module{
+    width: 1920px;
+    height: 250px;
+    background-color: black;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+.last_module div{
+    margin-left: 160px;
+}
+.last_module img{
+    margin-top: 150px;
+    margin-left: 100px;
+}
+.video{
+    width: 1280px;
+    height: 500px;
+
+    position: relative;
+    top:150px;
+    right: 150px;
+    background-color: rgba(0, 0, 0, 0.73);
+
+}
+#main{
+    width: 1920px;
+    height: 1800px;
+    margin: 0 auto;
+    overflow: hidden;
+}

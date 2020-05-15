@@ -1,0 +1,174 @@
+
+.top_module{
+    width: 1920px;
+    height: 75px;
+    background-color:#252525;
+    margin: 0 auto;
+}
+.top_module a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+.logo{
+    width: 141px;
+    height: 75px;
+    background-image: url("../images/logo.png");
+    float: left;
+    margin-left: 200px;
+}
+.login_title{
+    width:204px;
+    height: 65px;
+    margin-top: 5px;
+    float: left;
+    background-image: url("../images/logo_text.png");
+}.top_module{
+    width: 1920px;
+    height: 75px;
+    background-color:#252525;
+}
+.top_module a,#welcome,#server_user{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+.logo{
+    width: 141px;
+    height: 75px;
+    background-image: url("../images/logo.png");
+    float: left;
+    margin-left: 200px;
+}
+.login_title{
+    width:204px;
+    height: 65px;
+    margin-top: 5px;
+    float: left;
+    background-image: url("../images/logo_text.png");
+}
+.first_module{
+    width: 1920px;
+    height: 300px;
+    background-image: url("../images/main4.png");
+    margin: 0 auto;
+}
+.main_module{
+    width: 1600px;
+    height: 1000px;
+    border: 1px solid black;
+    border-top: 6px solid #868686;
+
+    margin: 0 auto;
+    margin-top: 80px;
+
+}
+.main_madule_top{
+    width: 100%;
+    height: 60px;
+    background-color: #ded0d8;
+    position: relative;
+    top: -16px;
+}
+.main_madule_top ul{
+    list-style: none;
+}
+.main_madule_top li{
+    width: 110px;
+    height: 55px;
+    position: relative;
+    /*top: -5px;*/
+    margin-left: 50px;
+    line-height: 50px;
+    float: left;
+    padding-left: 50px;
+}
+.hero_div{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.hero_name{
+    width: 80px;
+    height: 30px;
+    position: relative;
+    top: 205px;
+    left: 60px;
+    /*margin: 0 auto;*/
+
+}
+.hero{
+    width: 200px;
+    height: 270px;
+    float: left;
+    margin-left: 40px;
+
+}
+.bm{
+    width: 140px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.64);
+    line-height: 200px;
+    padding-left: 60px;
+    position: absolute;
+    color: whitesmoke;
+    z-index: 1;
+}
+
+.hero_img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+
+}
+.bm a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.skill{
+    width: 1250px;
+    height: 550px;
+    /*border: 1px solid black;*/
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.skill_div{
+    width: 450px;
+    height: 400px;
+    /*border: 1px black solid;*/
+    float: left;
+    margin-top: 130px;
+
+
+}
+.skills_div{
+    width: 750px;
+    height: 500px;
+    /*border: 1px black solid;*/
+    float: right;
+
+}
+.skill_div img{
+    margin-left: 10px;
+}
+.skills_div img{
+    position: absolute;
+}
+.main{
+    width: 1920px;
+    height: 1800px;
+    margin: 0 auto;
+
+}

@@ -1,0 +1,44 @@
+body{
+        background-image: url("../images/server.jpg");
+
+}
+.top_module{
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.44);
+}
+.logo{
+    width: 141px;
+    height: 75px;
+    background-image: url("../images/logo.png");
+    float: left;
+    margin-left: 300px;
+}
+.login_title{
+    width:204px;
+    height: 65px;
+    margin-top: 5px;
+    float: left;
+    background-image: url("../images/logo_text.png");
+}
+.main_module{
+    width: 100%;
+    height: 750px;
+    /*background-color: #F8EFE7;*/
+    /*margin-top: 100px;*/
+}
+.main_module_1,.main_module_2,.main_module_3,.main_module_4{
+    width: 620px;
+    height: 150px;
+    margin: 0 auto;
+    /*margin-top: 100px;*/
+    position: relative;
+    top: 75px;
+    background-color: rgba(0, 0, 0, 0.38);
+    border: 3px black solid;
+    margin-top: 15px;
+    font-size: 40px;
+    color: whitesmoke;
+    padding-left: 380px;
+    line-height: 150px;
+}

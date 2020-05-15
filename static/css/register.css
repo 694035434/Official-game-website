@@ -1,0 +1,67 @@
+body{
+        background-image: url("../images/login_image1.jpg");
+
+}
+.top_module{
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.19);
+}
+.logo{
+    width: 141px;
+    height: 75px;
+    background-image: url("../images/logo.png");
+    float: left;
+    margin-left: 300px;
+}
+.login_title{
+    width:204px;
+    height: 65px;
+    margin-top: 5px;
+    float: left;
+    background-image: url("../images/logo_text.png");
+}
+.main_module{
+    width: 100%;
+    height: 750px;
+    background-color: #F8EFE7;
+    /*margin-top: 100px;*/
+}
+.main_module_1{
+    width: 560px;
+    height: 450px;
+    margin: 0 auto;
+    /*margin-top: 100px;*/
+    position: relative;
+    top: 150px;
+}
+#user,#pwd,#tel,#pwd1{
+    width: 400px;
+    height: 40px;
+}
+/*#pwd{*/
+    /*position: relative;*/
+    /*left: 20px;*/
+/*}*/
+#register_but{
+    width: 130px;
+    height: 35px;
+    background-color: #2E6FA6;
+    border-radius: 5px;
+    color: white;
+    line-height: 35px;
+    padding-left: 90px;
+    position: relative;
+    left: 80px;
+
+}
+#pwd_show,#user_show{
+    /*float: right;*/
+    position: absolute;
+    top: 135px;
+    left: 490px;
+    width: 200px;
+    /*width: 100px;*/
+    /*height: 50px;*/
+    /*background-color: black;*/
+}

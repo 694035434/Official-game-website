@@ -1,0 +1,96 @@
+body{
+        background-image: url("../images/news.jpg");
+
+}
+.top_module{
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.44);
+}
+.logo{
+    width: 141px;
+    height: 75px;
+    background-image: url("../images/logo.png");
+    float: left;
+    margin-left: 300px;
+}
+.login_title{
+    width:204px;
+    height: 65px;
+    margin-top: 5px;
+    float: left;
+    background-image: url("../images/logo_text.png");
+}
+.main_module{
+    width: 100%;
+    height: 750px;
+    /*background-color: #F8EFE7;*/
+    /*margin-top: 100px;*/
+}
+.main_module_1{
+    width: 1000px;
+    height: 900px;
+    margin: 0 auto;
+    /*margin-top: 100px;*/
+    position: relative;
+    top: 75px;
+    background-color: rgba(0, 0, 0, 0.41);
+    border: 3px black solid;
+}
+.user_table{
+    width: 900px;
+    height: 500px;
+}
+#username{
+    width: 630px;
+    height: 50px;
+    margin-left: 70px;
+    position: relative;
+    top: 80px;
+     background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 5px;
+    color:whitesmoke;
+    border: 1px solid whitesmoke;
+}
+#search_but{
+    width: 200px;
+    height: 56px;
+    position: relative;
+    top: 81px;
+
+     background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 5px;
+    color:whitesmoke;
+    border: 1px solid whitesmoke;
+}
+.user_table tr td{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.user_table{
+    margin-left: 70px;
+    position: relative;
+    top: 100px;
+}
+.del_but{
+    color: whitesmoke;
+}
+.goback{
+    width: 165px;
+    height: 60px;
+    background-color: #e5e5e5;
+    /*border: 3px black solid;*/
+    /*color: #232323;*/
+    font-size: 25px;
+    /*font-weight: bolder;*/
+    float: right;
+    box-shadow: 3px 3px 3px white;
+
+    line-height: 60px;
+    padding-left:15px;
+    margin-right: 150px;
+     background-color: rgba(0, 0, 0, 0.41);
+    border-radius: 5px;
+    color:whitesmoke;
+    border: 1px solid whitesmoke;
+}
