@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="../static/css/login.css" rel="stylesheet">
+    <script src="/static/js/jquery-1.8.2.js"></script>
+    <script>
+        $(function () {
+            $("#login_but").click(function () {
+                v_user_name = $("#user_name").val();
+                v_user_pwd = $("#user_pwd").val();
+                if (v_user_name.length!=0) {
+//                        alert("11");
+                        $.ajax({
+                            type: "GET",
+                            url: "/login_pro",
+                            data: "user=" + v_user_name + "&pwd=" + v_user_pwd,
+                            success: function (msg) {
+                                if(msg=="T") {
+//                                  登录成功后，将用户名存储到本地
+//                                  html5 本地存储
+//                                  localstorage
+//                                    sessionStorage
+                                    sessionStorage.setItem("username",v_user_name);
+                                    window.location.href = "/index";}
+                                 else if(msg=="M"){
+                                        window.location.href="/server";
+                                }else {
+                                        $("#show2").html("用户名不存在或者密码错误！");
+                                    }
+
+                            }
+                        });
+                    }else {$("#show2").html("密码不能为空！");}
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="main">
+<div class="top_module">
+    <div class="logo"></div>
+    <div class="login_title"></div>
+</div>
+<div class="main_module">
+<div class="user">用户名：</div> <input id="user_name" type="text"><div id="show1"></div>
+<div class="pwd"> 密码：</div><input id="user_pwd" type="password"><div id="show2"></div>
+<div id="login_but">登录</div>
+    <a href="/register" target="_blank" id="goto_register">账号注册</a>
+</div></div>
+</body>
+</html>

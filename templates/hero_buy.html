@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>英雄购买</title>
+    <link href="../static/css/hero_buy.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.8.2.js"></script>
+    <script>
+        $(function () {
+            $(".buy_but span").click(function () {
+                $(".mb").animate({left:8})
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="main">
+<div class="top_module">
+    <div class="logo"></div>
+    <div class="login_title"></div>
+    <a href="/index" class="index_but" target="_blank">官网首页</a>
+<a href="/hero_query" class="index_but" target="_blank">英雄资料</a>
+<a href="/news_query" class="index_but" target="_blank">新闻中心</a>
+<a href="/activity_query" class="index_but" target="_blank">活动中心</a>
+</div>
+<div class="mb"><div class="buy_logo"></div></div>
+<div class="main_module">
+{% for r1 in u_result  %}
+            <div class="name">{{r1[1]}}</div>
+    <div class="h_img">
+            <img src="{{r1[2]}}" class="hero_img"></div>
+            <div class="price">价格：￥{{r1[5]}}</div>
+            <div class="buy_but"> <span>购买</span></div>
+    {%endfor%}
+</div></div>
+</body>
+</html>

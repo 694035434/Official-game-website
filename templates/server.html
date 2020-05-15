@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员页</title>
+    <link href="../static/css/server.css" rel="stylesheet">
+    <script src="/static/js/jquery-1.8.2.js"></script>
+    <script>
+        $(function () {
+            $(".main_module_1").click(function () {
+                window.location.href="/user_manager";
+            });
+            $(".main_module_2").click(function () {
+                window.location.href="/news_manager";
+            });
+            $(".main_module_3").click(function () {
+                window.location.href="/activity_manager";
+            });
+            $(".main_module_4").click(function () {
+                window.location.href="/hero_manager";
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div id="main">
+<div class="top_module">
+    <div class="logo"></div>
+    <a href="/index"><div class="login_title"></div></a>
+</div>
+<div class="main_module">
+    <div class="main_module_1">个人中心管理</div>
+    <div class="main_module_2">新闻中心管理</div>
+    <div class="main_module_3">活动中心管理</div>
+    <div class="main_module_4">英雄资料管理</div>
+</div></div>
+</body>
+</html>

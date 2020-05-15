@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>灵魂战争主页</title>
+    <link href="../static/css/index.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.8.2.js"></script>
+     <script>
+         <!--window.onload内部的代码在文档加载后执行-->
+//         window.onload=function () {
+//         };
+
+        $(function () {
+            i=1;
+            $("#xjt").click(function () {
+//                alert("sadas");
+//                n=$(this).index();
+                $(document).scrollTop(i*978);
+                i++;
+                if(i==4){
+                    i=0;
+                }
+
+            })
+
+            $(".module2 li").click(function () {
+                i=$(this).index();
+//                alert(i);
+                $(".module2 li:eq("+i+")").animate({width:"10%"},500);
+                $(".module2 li:eq("+i+")").css("background-color","red");
+
+//                $(".module2 li:eq("+i+")").css({width:25,background-color:"red"})
+                $(".module2 li:eq("+i+")").siblings().animate({width:"5%"},500);
+                $(".module2 li:eq("+i+")").siblings().css("background-color","#a1979d");
+                $(".ac_img a:eq("+i+")").fadeTo(1000, 1);
+                $(".ac_img a:eq("+i+")").siblings().hide();
+            });
+            j=1;
+            $(".next_hero").click(function () {
+
+//                alert(j);
+                $(".module3_1:eq("+j+")").fadeTo(1000,1);
+                $(".module3_1:eq("+j+")").siblings().fadeTo(1000,0);
+                j++;
+                if(j==4){
+                    j=1;
+                }
+            });
+//            $(".line").hide();
+//            $("#news news_content").mouseover(function () {
+////               alert("asda");
+//                $("#news line").fadeTo(1000,1);
+//           });
+//           $("#news news_content").mouseout(function () {
+//                $(".line").fadeTo(1000,0);
+//                $(".line").animate({left:100})
+//           })
+//
+//            $("#ac_img2").mouseover(function () {
+//               $(".line").fadeTo(1000,1);
+//           });
+//           $("#ac_img2").mouseout(function () {
+//               $("#news2 line").fadeTo(1000,0);
+//           });
+            $("#server_user").hide();
+            $("#welcome").hide();
+            v_username=sessionStorage.getItem("username");
+            if (v_username.length==0){
+                $("#login_regist").show();
+            }else if(v_username=="admin"){
+                $("#server_user").show();
+                $("#login_regist a").hide();
+            }else {
+                $("#show_user").text(v_username);
+                $("#welcome").show();
+                $("#login_regist a").hide();
+            }
+            $("#welcome").click(function () {
+//                alert(111)
+                window.location.href="/user_center?u_name="+v_username
+            })
+
+//            $("#index_but").click(function () {
+//                window.location.href="/index"
+//            })
+//            $("#hero_but").click(function () {
+//                window.location.href="/hero_query"
+//            })
+//            $("#news_but").click(function () {
+//                window.location.href="/news_query"
+//            })
+//            $("#activity_but").click(function () {
+//                window.location.href="/activity_query"
+//            })
+        })
+    </script>
+</head>
+<body>
+<div id="main">
+<div id="xjt"></div>
+
+
+    <div class="top_module">
+    <div class="logo"></div>
+    <div class="login_title"></div>
+
+
+    <a href="/index" class="index_but" target="_blank">官网首页</a>
+    <!--<span class="gd">|</span>-->
+<a href="/hero_query" class="index_but" target="_blank">英雄资料</a>
+    <!--<span class="gd">|</span>-->
+<a href="/news_query" class="index_but" target="_blank">新闻中心</a>
+    <!--<span class="gd">|</span>-->
+<a href="/activity_query" class="index_but" target="_blank">活动中心</a>
+        <div id="login_regist">
+    <a href="/login" target="_blank">登录</a>
+           <div id="welcome">欢迎你，<span id="show_user"></span></div>
+            <div id="server_user">管理员</div>
+    <!--<span class="gd">|</span>-->
+    <!--<a href="/register" target="_blank">注册</a>-->
+</div>
+</div>
+<div class="module1">
+
+</div>
+<div class="module2">
+    <div class="ac_title">活动/<span class="news_title">新闻中心</span></div>
+    <div class="ac_img">
+      {% for r1 in ac_result  %}
+    <a href="/activity_query_one?id={{r1[0]}}"><img src="{{r1[3]}}"></a>
+    <!--<div class="ac_img">{{r1[3]}}</div>-->
+    {%endfor%}</div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div id="news">
+        {% for r2 in news_result  %}
+        <a href="/news_query_one?id={{r2[0]}}"><div class="news_title">{{r2[3]}}|{{r2[1]}}</div></a>
+        <div class="line"></div>
+        <div class="news_content">{{r2[4]}}</div>
+          {%endfor%}
+    </div>
+    <div id="fgx"></div>
+    <div id="news2">
+        {% for r3 in  news_result2 %}
+        <a href="/news_query_one?id={{r3[0]}}"><div class="news_title">{{r3[3]}}|{{r3[1]}}</div></a>
+        <div class="line"></div>
+        <div class="news_content">{{r3[4]}}</div>
+        {%endfor%}
+    </div>
+    <div id="ac_img2">
+        {% for r4 in  ac_result2 %}
+        <img src="{{r4[3]}}">
+        <div class="ac_introduce">{{r4[4]}}</div>
+        {%endfor%}
+    </div>
+</div>
+<div class="module3">
+    {% for r5 in  hero_img %}
+    <div class="module3_1">
+        <div class="hero_img"> <img src="{{r5[2]}}"></div>
+        <div class="module3_2">
+            <div class="hero_name">{{r5[1]}}</div>
+            <div class="hero_skill">{{r5[3]}}</div>
+            <div class="next_hero">--></div>
+            <div class="hero_but"><a href="/hero_query" target="_blank">查看全部英雄</a></div>
+
+        </div>
+        </div>
+    {%endfor%}
+</div>
+<div class="module4"></div></div>
+</body>
+</html>

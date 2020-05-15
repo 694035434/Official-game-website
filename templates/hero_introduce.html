@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>英雄详细</title>
+    <link href="../static/css/hero_introduce.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.8.2.js"></script>
+    <script>
+        $(function () {
+            $(".introduce").animate({left:"-500"},0);
+            $(".introduce").animate({left:"3"},1000);
+        })
+    </script>
+</head>
+<body>
+<div id="main">
+<div class="top_module">
+    <div class="logo"></div>
+    <div class="login_title"></div>
+</div>
+<div class="main_module">
+    {% for r1 in u_result  %}
+    <div class="introduce">
+        <div class="name">{{r1[1]}}</div>
+        <div class="story">{{r1[4]}}</div>
+        <div class="hero_buy"><a href="/hero_buy?id={{r1[0]}}">购买英雄</a></div>
+    </div>
+    <div class="hero_img"><img src="{{r1[2]}}" class="hero_img"></div>
+    {%endfor%}
+</div>
+</div>
+</body>
+</html>

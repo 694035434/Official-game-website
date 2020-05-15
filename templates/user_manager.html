@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户管理</title>
+    <link href="../static/css/user_manager.css" rel="stylesheet">
+    <script src="../static/js/jquery-1.8.2.js"></script>
+    <script>
+        $(function () {
+//            $(".user_table").hide();
+//            $("#search_but").click(function () {
+//                $(".user_table_div").show();
+//            })
+
+            $(".goback").click(function () {
+                window.location.href="/server";
+            })
+        })
+//        function f1() {
+////            消息确认框
+//            r=confirm("确定要删除吗？");
+//            if(r==true){
+//                return true;
+//            }else {
+//                return false;
+//            }
+//        }
+
+    </script>
+</head>
+
+<body>
+<div id="main">
+    <div class="top_module">
+    <div class="logo"></div>
+    <div class="login_title"></div>
+        <div class="goback">返回管理中心</div>
+</div>
+    <div class="main_module">
+        <div class="main_module_1">
+            <form action="/user_search" method="get">
+   <input id="username" type="text" name="username">
+    <input id="search_but" type="submit" value="查询">
+</form>
+            <div class="user_table_div">
+    <table class="user_table">
+    <tr>
+        <td>用户ID</td>
+        <td>用户姓名</td>
+        <td>用户密码</td>
+        <td>联系方式</td>
+        <td>所在大区</td>
+        <td>游戏等级</td>
+        <td>游戏胜率</td>
+        <td>常用英雄</td>
+        <td>管理操作</td>
+    </tr>
+    {% for r1 in u_result  %}
+        <tr>
+            <td>{{r1[0]}}</td>
+            <td>{{r1[1]}}</td>
+            <td>{{r1[2]}}</td>
+            <td>{{r1[3]}}</td>
+            <td>{{r1[4]}}</td>
+            <td>{{r1[5]}}</td>
+            <td>{{r1[6]}}</td>
+            <td>{{r1[7]}}</td>
+            <td>
+                <a onclick="return confirm('确定删除吗？');" class="del_but" href="/user_del?userid={{r1[0]}}">删除</a>
+            </td>
+        </tr>
+
+    {%endfor%}
+</table>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+
+
+</html>

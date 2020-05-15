@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>英雄管理</title>
+    <link href="../static/css/hero_manager.css" rel="stylesheet">
+</head>
+<body>
+<div id="main">
+    <a href="/server"><div class="goback">返回管理中心</div></a>
+<div class="main_module">
+<form action="/hero_manager_pro" method="post" enctype="multipart/form-data">
+英雄名称：<input name="h_name" type="text" class="input1"><br><br>
+英雄图片:<input type="file" name="h_img"><br><br>
+英雄技能:<input type="text" name="h_skill" class="input2"><br><br>
+英雄故事：<textarea name="h_story" class="input_story"></textarea><br><br>
+    <input type="submit" name="英雄发布" class="input_but">
+</form></div></div>
+</body>
+</html>

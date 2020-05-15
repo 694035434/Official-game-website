@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <link href="../static/css/register.css" rel="stylesheet">
+   <script src="/static/js/jquery-1.8.2.js"></script>
+   <script>
+       $(function () {
+           $("#register_but").click(function () {
+               v_user= $("#user").val();
+               v_pwd=$("#pwd").val();
+               v_pwd1=$("#pwd1").val();
+               v_phone=$("#tel").val();
+               if (v_pwd!=v_pwd1){
+                   $("#pwd_show").html("密码不同！");
+               }
+               else{
+                    $.ajax({
+                       type: "GET",
+                       url: "/register_pro",
+                       data: "user="+v_user+"&pwd="+v_pwd+"&phone="+v_phone,
+                       success: function(msg){
+                             if(msg=="T") {
+                                    window.location.href = "/login";
+                                }else {
+//                                    $("#show2").h/tml();
+                                }
+                       }
+                    });
+               }
+           });
+       });
+
+   </script>
+</head>
+<body>
+<div id="main">
+<div class="top_module">
+    <div class="logo"></div>
+    <div class="login_title"></div>
+</div>
+<div class="main_module">
+    <div class="main_module_1">
+    用户账号：<input type="text" id="user"><br><br><div id="user_show"></div>
+    账号密码：<input type="password" id="pwd"><br><br>
+        确认密码：<input type="password" id="pwd1"><br><br>
+    <div id="pwd_show"></div>
+    联系方式：<input type="text" id="tel"><br><br>
+    <div id="register_but">注册</div>
+    </div>
+</div></div>
+</body>
+</html>

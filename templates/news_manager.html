@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻管理</title>
+    <link href="../static/css/news_manager.css" rel="stylesheet">
+    <script src="/static/js/jquery-1.8.2.js"></script>
+    <script>
+        $(function () {
+            $("#join_but").click(function () {
+//                alert("asdasd")
+                name = $("#name").val();
+                time = $("#time").val();
+                n_class = $("#class").val();
+                introduce = $("#introduce").val();
+                $.ajax({
+                    type: "GET",
+                    url: "/news_join",
+                    data: "name=" + name + "&time=" + time + "&n_class=" + n_class + "&introduce=" + introduce,
+                    success: function (msg) {
+                        if (msg == "T") {
+                            $("#show").text("录入成功")
+                        } else {
+                            $("#show").text("录入失败")
+                        }
+
+
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="main">
+<div class="top_module">
+    <div class="logo"></div>
+    <div class="login_title"></div>
+    <a href="/server"><div class="goback">返回管理中心</div></a>
+</div>
+<div class="main_module">
+    <div class="main_module_1">
+        <div class="name0">新闻标题：<input type="text" id="name"></div>
+        <div class="time0">新闻时间：<input type="text" id="time"></div>
+        <div class="class0">新闻类别：<br><input type="text" id="class"></div>
+        <div class="introduce0">新闻详细：<textarea id="introduce"></textarea>>
+        </div>
+<div id="join_but">录入</div>
+        <div id="show"></div>
+</div>
+</div></div>
+</body>
+</html>

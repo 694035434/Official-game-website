@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活动管理</title>
+    <link href="../static/css/activity_manager.css" rel="stylesheet">
+</head>
+<body>
+<div id="main">
+        <a href="/server"><div class="goback">返回管理中心</div></a>
+
+    <!--<div id="main_img">-->
+<div class="main_module">
+<form action="/activity_manager_pro" method="post" enctype="multipart/form-data">
+    活动标题：<input type="text" name="a_name" class="input"><br><br>
+    活动时间：<input type="text" name="a_time" class="input"><br><br>
+    活动图片：<input type="file" name="a_img"><br><br>
+    活动内容：<textarea name="a_content" class="input"></textarea><br><br>
+    活动背景图片：<input type="file" name="ab_img"><br><br>
+    <input type="submit" name="活动发布" class="input_but">
+</form></div>
+    </div>
+<!--</div>-->
+</body>
+</html>
